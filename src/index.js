@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
+import { addExpense } from './commands/add.js'
+
 const program = new Command()
 
 program
@@ -11,7 +13,7 @@ program
     .option('--description <description>')
     .option('--amount <amount>')
     .action((options) => {
-
+        addExpense(options.description, options.amount)
     })
 
 program
