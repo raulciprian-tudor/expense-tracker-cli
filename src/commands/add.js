@@ -1,4 +1,5 @@
 import { loadExpenses, saveExpenses } from '../storage.js';
+import { validateDescriptionAndAmount, validateId } from "../utils/validators.js";
 
 const addExpense = async(description, amount) => {
     const data = await loadExpenses();

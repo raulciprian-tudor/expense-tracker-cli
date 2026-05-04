@@ -2,6 +2,7 @@
 import { Command } from 'commander'
 import { addExpense } from './commands/add.js'
 import { deleteExpense } from './commands/delete.js'
+import { updateExpense } from "./commands/update.js";
 
 const program = new Command()
 
@@ -43,7 +44,7 @@ program
     .option('--description <description>')
     .option('--amount <amount>')
     .action((options) => {
-
+        updateExpense(options.id, options.description, options.amount)
     })
 
 program.parse()
