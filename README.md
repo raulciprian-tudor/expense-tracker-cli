@@ -10,7 +10,7 @@ A command-line application to manage your personal expenses. Add, update, delete
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/expense-tracker-cli.git
+git clone https://github.com/raulciprian-tudor/expense-tracker-cli.git
 cd expense-tracker-cli
 npm install
 npm link
