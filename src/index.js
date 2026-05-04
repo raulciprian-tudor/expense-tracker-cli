@@ -3,6 +3,7 @@ import { Command } from 'commander'
 import { addExpense } from './commands/add.js'
 import { deleteExpense } from './commands/delete.js'
 import { updateExpense } from "./commands/update.js";
+import { listExpenses } from "./commands/list.js";
 
 const program = new Command()
 
@@ -28,7 +29,7 @@ program
 program
     .command('list')
     .action(() => {
-
+        listExpenses()
     })
 
 program

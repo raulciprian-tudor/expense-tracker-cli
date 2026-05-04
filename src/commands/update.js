@@ -1,6 +1,4 @@
 import {loadExpenses, saveExpenses} from "../storage.js";
-import {validateId} from "../utils/validators.js";
-
 
 const updateExpense = async (id, description, amount) => {
     const data = await loadExpenses();
