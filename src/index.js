@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
 import { addExpense } from './commands/add.js'
+import { deleteExpense } from './commands/delete.js'
 
 const program = new Command()
 
@@ -20,7 +21,7 @@ program
     .command('delete')
     .option('--id <id>')
     .action((options) => {
-
+        deleteExpense(options.id)
     })
 
 program
