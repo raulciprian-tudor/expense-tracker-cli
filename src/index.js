@@ -4,6 +4,7 @@ import { addExpense } from './commands/add.js'
 import { deleteExpense } from './commands/delete.js'
 import { updateExpense } from "./commands/update.js";
 import { listExpenses } from "./commands/list.js";
+import { summaryExpenses } from "./commands/summary.js";
 
 const program = new Command()
 
@@ -36,7 +37,7 @@ program
     .command('summary')
     .option('--month [month]')
     .action((options) => {
-
+        summaryExpenses(options.month)
     })
 
 program

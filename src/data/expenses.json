@@ -1,0 +1,10 @@
+{
+  "expenses": [
+    {
+      "id": 2,
+      "description": "Dinner",
+      "amount": "10",
+      "createdDate": "2026-05-04"
+    }
+  ]
+}
